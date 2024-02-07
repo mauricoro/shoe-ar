@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.shoear.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/openShoeDetails"
+            app:destination="@id/navigation_shoe_details" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_cart"
+        android:name="com.example.shoear.CartFragment"
+        android:label="@string/title_cart"
+        tools:layout="@layout/fragment_cart" >
+        <action
+            android:id="@+id/openShoeDetails2"
+            app:destination="@id/navigation_shoe_details" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_create"
+        android:name="com.example.shoear.CreateFragment"
+        android:label="@string/title_create"
+        tools:layout="@layout/create_fragment">
+        <action
+            android:id="@+id/open_login2"
+            app:destination="@id/login_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_shoe_details"
+        android:name="com.example.shoear.ShoeDetailsFragment"
+        tools:layout="@layout/navigation_shoe_details">
+        <argument
+            android:name="shoeId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/open_login"
+            app:destination="@id/login_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/login_fragment"
+        android:name="com.example.shoear.LoginFragment"
+        tools:layout="@layout/login_fragment" >
+        <action
+            android:id="@+id/openAccount"
+            app:destination="@id/navigation_account" />
+        <action
+            android:id="@+id/createAccount"
+            app:destination="@id/navigation_create" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/camera_fragment"
+        android:name="com.example.shoear.CameraFragment"
+        android:label="CameraFragment" >
+
+        <argument
+            android:name="userId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/closeCamera"
+            app:destination="@id/navigation_account" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name="com.example.shoear.AccountFragment"
+        android:label="@string/title_account"
+        tools:layout="@layout/fragment_account">
+        <argument
+            android:name="userId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/openCamera"
+            app:destination="@id/camera_fragment" />
+    </fragment>
+
+
+</navigation>

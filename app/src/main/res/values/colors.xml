@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bounding_box_color">#FF6F00</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="blue">#08547A</color>
+    <color name="red">#9B1420</color>
+    <color name="tan">#CEC4A3</color>
+    <color name="lightblue">#08C0CC</color>
+    <color name="salmon">#F6454E</color>
+    <color name="mint">#90E7D0</color>
+    <color name="pink">#F04787</color>
+    <color name="orange">#FEB52A</color>
+    <color name="lime">#DDF2A1</color>
+    <color name="green">#00948C</color>
+    <color name="deeporange">#FF4C35</color>
+
+    <integer-array name="androidcolors">
+        <item>@color/blue</item>
+        <item>@color/red</item>
+        <item>@color/tan</item>
+        <item>@color/lightblue</item>
+        <item>@color/salmon</item>
+        <item>@color/mint</item>
+        <item>@color/pink</item>
+        <item>@color/orange</item>
+        <item>@color/lime</item>
+        <item>@color/green</item>
+        <item>@color/deeporange</item>
+    </integer-array>
+
+</resources>

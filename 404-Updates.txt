@@ -1,0 +1,17 @@
+Week of 09/05 - Prepared update presentation
+
+Week of 09/12 - Met with Santiago and Alvaro and started planning the implementation of their subsytems
+
+Week of 09/19 - Decided to remove Apollo and Brandon and I started researching Kotlin Rooms. Removed apollo from app and update presentation 2.
+
+Week of 09/26 - Recieved kotlin room DB from Brandon and currently working on tieing it in. For next weeks Update Presentaion #3, I need to have DB implemented completely to stay on schedule.
+
+Week of 10/03 - Began implementation of DB and Santiagos part
+
+Week of 10/10
+
+Week of 10/17
+
+Week of 10/24
+
+Week of 10/31
